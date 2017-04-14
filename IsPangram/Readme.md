@@ -1,27 +1,39 @@
 # Pangrams
 
 ## Problem statement: https://www.hackerrank.com/challenges/pangrams
+## Solution added : Java
 ### Imports
+
 ``````
 import java.io.*;
 import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
-``````
-public class Solution {
-
+```
+```
+    public class Solution 
     public static void main(String[] args) {
-  
-        Scanner sc = new Scanner(System.in);        
-        String sentence = sc.nextLine(); //take input String using nextLine() as sentence may contain spaces   
-        sentence = sentence.toLowerCase();
-        //so that when we check for duplicates upper and lower case alphabet will be treated as same ie considered duplicate
-        sentence = sentence.replaceAll("\\s+","");//for removing space
-        char []pangramChk = sentence.toCharArray(); //converting string to array 
-        Arrays.sort(pangramChk); //as array has in-built method for sorting 
+    Scanner sc = new Scanner(System.in);        
+    String sentence = sc.nextLine(); 
+````````````````
+    Take input String using nextLine() as sentence may contain spaces   
+    
+```   
+    sentence = sentence.toLowerCase();
+    sentence = sentence.replaceAll("\\s+","");
+```
+    1)So that when we check for duplicates upper and lower case alphabet will be treated as same ie considered duplicate
+    2)for removing space
+    
+```
+  char []pangramChk = sentence.toCharArray();
+        Arrays.sort(pangramChk); 
         String sorted = new String(pangramChk); 
-        // converting array into string again as due to sorting all the chars are now arranged in increasing order of ascii values 
+```    
+       converting string to array
+       as array has in-built method for sorting
+       converting array into string again as due to sorting all the chars are now arranged in increasing order of ascii values 
         sentence =  sorted.replaceAll("(.)\\1{1,}", "$1");
         //using regex to remove duplicates as due to sorting all the duplicates will be next to one another
         //replaceAll("regex"), "replacement" Replaces all occurances of "regex" with "replacement.
