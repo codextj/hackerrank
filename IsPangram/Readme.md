@@ -1,17 +1,15 @@
 # Pangrams
 - HackerRank link: [hackerrank.com/challenges/pangrams](https://www.hackerrank.com/challenges/pangrams)
 - Difficulty: **Easy**
-
-
-# Solution
-## Java
 ###Imports
-```import java.io.*;
+```
+import java.io.*;
 import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 ```
+
 ```java
  public class Solution 
     public static void main(String[] args) {
