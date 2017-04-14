@@ -25,16 +25,16 @@ Take input String using nextLine() as sentence may contain spaces
 
 ```
 1)So that when we check for duplicates upper and lower case alphabet will be treated as same ie considered duplicate
-2)for removing sp
+2)for removing space
 
 ```java
      char []pangramChk = sentence.toCharArray();
      Arrays.sort(pangramChk); 
      String sorted = new String(pangramChk); 
 ```
-1)converting string to array
-2)as array has in-built method for sorting
-3)converting array into string again as due to sorting all the chars are now arranged in increasing order of ascii values 
+1)converting string to array <br>
+2)as array has in-built method for sorting<br>
+3)converting array into string again due to sorting all the chars are now arranged in increasing order of ascii values 
 
 
 ```java
