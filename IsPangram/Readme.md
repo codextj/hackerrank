@@ -17,30 +17,31 @@ import java.util.regex.*;
     String sentence = sc.nextLine(); 
 
 ```
-    Take input String using nextLine() as sentence may contain spaces   
+Take input String using nextLine() as sentence may contain spaces   
+    
 ```java
     sentence = sentence.toLowerCase();
     sentence = sentence.replaceAll("\\s+","");
 
 ```
-    1)So that when we check for duplicates upper and lower case alphabet will be treated as same ie considered duplicate
-    2)for removing space
+1)So that when we check for duplicates upper and lower case alphabet will be treated as same ie considered duplicate
+2)for removing sp
 
 ```java
      char []pangramChk = sentence.toCharArray();
      Arrays.sort(pangramChk); 
      String sorted = new String(pangramChk); 
 ```
-    1)converting string to array
-    2)as array has in-built method for sorting
-    3)converting array into string again as due to sorting all the chars are now arranged in increasing order of ascii values 
+1)converting string to array
+2)as array has in-built method for sorting
+3)converting array into string again as due to sorting all the chars are now arranged in increasing order of ascii values 
 
 ```java
      sentence =  sorted.replaceAll("(.)\\1{1,}", "$1");
 ```
-     using regex to remove duplicates as due to sorting all the duplicates will be next to one another
-     replaceAll("regex"), "replacement" Replaces all occurances of "regex" with "replacement.
-     due to all this checks now if our string/sentence is pangram it must be having 26 unique letter/chars ie alphabets  
+using regex to remove duplicates as due to sorting all the duplicates will be next to one another
+replaceAll("regex"), "replacement" Replaces all occurances of "regex" with "replacement.
+due to all this checks now if our string/sentence is pangram it must be having 26 unique letter/chars ie alphabets  
 
 ```java
        if(sentence.length()>25)
