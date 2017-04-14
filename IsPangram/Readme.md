@@ -1,7 +1,8 @@
 # Pangrams
 - HackerRank link: [hackerrank.com/challenges/pangrams](https://www.hackerrank.com/challenges/pangrams)
-- Difficulty: **Easy**
-###Imports
+- Difficulty: **Easy**<br>
+
+Imports
 ```
 import java.io.*;
 import java.util.*;
