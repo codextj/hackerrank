@@ -25,7 +25,7 @@ Take input String using nextLine() as sentence may contain spaces
     sentence = sentence.replaceAll("\\s+","");
 
 ```
-1)So that when we check for duplicates upper and lower case alphabet will be treated as same ie considered duplicate
+1)So that when we check for duplicates upper and lower case alphabet will be treated as same ie considered duplicate<br>
 2)for removing space
 
 ```java
