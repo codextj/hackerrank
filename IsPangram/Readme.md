@@ -25,6 +25,7 @@ Take input String using nextLine() as sentence may contain spaces
 
 ```
 1)So that when we check for duplicates upper and lower case alphabet will be treated as same ie considered duplicate
+
 2)for removing sp
 
 ```java
