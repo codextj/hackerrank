@@ -21,7 +21,7 @@ public class Solution {
         //using regex to remove duplicates as due to sorting all the duplicates will be next to one another
         //replaceAll("regex"), "replacement" Replaces all occurances of "regex" with "replacement.
         //due to all this checks now if our string/sentence is pangram it must be having 26 unique letter/chars ie alphabets  
-                     if(sentence.length()>25)
+                     if(sentence.length()==26)
                       {
                        System.out.println("pangram");
                      }
