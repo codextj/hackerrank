@@ -6,8 +6,6 @@ Imports
 ```
 import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
 import java.util.regex.*;
 ```
 
@@ -46,7 +44,7 @@ replaceAll("regex"), "replacement" Replaces all occurances of "regex" with "repl
 due to all this checks now if our string/sentence is pangram it must be having 26 unique letter/chars ie alphabets  
 
 ```java
-       if(sentence.length()>25)
+       if(sentence.length()==26)
                       {
                        System.out.println("pangram");
                      }
