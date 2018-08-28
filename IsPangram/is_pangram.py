@@ -7,6 +7,20 @@ print('pangram' if len(letter_set) == 26 else 'not pangram')
 
 #--------------------------------------------------------------------------------------------------------------------------
 
+s = input().lower()
+
+char_dict = {}
+for char in s:
+    if char not in char_dict:
+        char_dict[char] = 1
+
+char_dict.pop(' ',None)
+
+print('pangram' if len(char_dict) == 26 else 'not pangram')
+
+
+#--------------------------------------------------------------------------------------------------------------------------
+
 from collections import Counter
 s = input().lower()
 s_char_set = Counter(s)
