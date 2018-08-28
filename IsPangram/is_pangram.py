@@ -30,7 +30,6 @@ print('pangram' if len(s_char_set) == 26 else 'not pangram')
 
 
 #--------------------------------------------------------------------------------------------------------------------------
-#slowest 
 
 from collections import defaultdict
 
